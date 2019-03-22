@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Database_project1</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>BookSearch</servlet-name>
+		<servlet-class>BookSearch</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BookSearch</servlet-name>
+		<url-pattern>/BookSearch</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>InsertBorrower</servlet-name>
+		<servlet-class>InsertBorrower</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InsertBorrower</servlet-name>
+		<url-pattern>/InsertBorrower</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckOut</servlet-name>
+		<servlet-class>CheckOut</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CheckOut</servlet-name>
+		<url-pattern>/CheckOut</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Details</servlet-name>
+		<servlet-class>Details</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Details</servlet-name>
+		<url-pattern>/Details</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckIn</servlet-name>
+		<servlet-class>CheckIn</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CheckIn</servlet-name>
+		<url-pattern>/CheckIn</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CalculateFines</servlet-name>
+		<servlet-class>CalculateFines</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CalculateFines</servlet-name>
+		<url-pattern>/CalculateFines</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserFines</servlet-name>
+		<servlet-class>UserFines</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserFines</servlet-name>
+		<url-pattern>/UserFines</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PaymentOfFine</servlet-name>
+		<servlet-class>PaymentOfFine</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PaymentOfFine</servlet-name>
+		<url-pattern>/PaymentOfFine</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>FinePaid</servlet-name>
+		<servlet-class>FinePaid</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FinePaid</servlet-name>
+		<url-pattern>/FinePaid</url-pattern>
+	</servlet-mapping>
+</web-app>
